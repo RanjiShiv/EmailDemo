@@ -1,0 +1,21 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.RazorPages
+
+@functions {
+    public class Subscriber : PageModel
+    {
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public string productname { get; set; }
+    }
+}
+
+<h2>In the subscriber razor page.</h2>
+<div>
+    This is the tempalte used to render the emails.<br/>
+    Subscriber details:<br/>
+    @Model.firstname <br/>
+    @Model.lastname <br/>
+    @Model.productname 
+
+</div>

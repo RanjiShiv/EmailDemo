@@ -1,0 +1,12 @@
+﻿@page
+@model Model
+<div style="margin-top:30px;">
+    <form method="post">
+        <div>Name: <input asp-for="Name" /></div>
+        <div><input type="submit" /></div>
+    </form>
+    @if (!string.IsNullOrEmpty(@model.))
+    {
+        <p>Hello @Model.Name!</p>
+    }
+</div>
